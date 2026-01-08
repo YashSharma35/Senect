@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Single Page Website</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+      color: #f8f9fa;
+      scroll-behavior: smooth; /* Enable smooth scrolling */
+    }
+
+    .navbar-dark {
+      background-color: #1f1f1f;
+      border-bottom: 2px solid #007bff;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      color: #007bff;
+    }
+
+    .navbar-brand:hover {
+      color: #00bfff;
+    }
+
+    .section {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .section-home {
+      background: url('abc1.png') no-repeat center center/cover;
+    }
+
+    .section-about {
+      background-color: #1f1f1f;
+      text-align: justify;
+    }
+
+    .section-contact {
+      background-color: #2d2d2d;
+      text-align: justify;
+    }
+
+    h1, h2, p {
+      margin: 0;
+    }
+
+    .btn-custom {
+      background-color: #007bff;
+      color: #fff;
+      border-radius: 50px;
+      padding: 10px 20px;
+      transition: all 0.3s ease;
+    }
+
+    .btn-custom:hover {
+      background-color: #0056b3;
+      transform: scale(1.1);
+    }
+
+    .section-home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Adjust the rgba value for transparency */
+  z-index: 1; /* Ensure the overlay is above the image */
+}
+
+.section-home > div {
+  position: relative;
+  z-index: 2; /* Ensure the text is above the overlay */
+}
+  </style>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home">SENECT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+        <!-- Add Login Button -->
+        <a href="login.html" class="btn btn-custom ms-3">Login</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Home Section -->
+  <section id="home" class="section section-home">
+    <div>
+      <h1>Welcome to SENECT</h1>
+      <p>...Where Experience Meets Innovation...</p>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="section section-about">
+    <div>
+      <h2><center>About Us</center></h2><br>
+      <p>Welcome to SENECT, a platform created to bridge the gap between university students and alumni, helping foster meaningful connections that support both personal and professional growth. At SeNect, we understand that navigating university life can be challenging, but it doesn't have to be done alone. Our platform offers students the opportunity to connect with alumni who have walked the same path and can provide invaluable guidance. Whether you're looking for mentorship, career advice, or insights into life after graduation, SeNect is here to support you every step of the way. Our Mission is to create a vibrant community where students can engage with alumni, learn from their experiences, and access resources that enhance their academic and career success. By connecting students with seasoned professionals, we aim to empower the next generation of leaders to thrive in a rapidly changing world.<br>
+      <br><h6>What We Offer:</h6>
+      <ul>
+        <li><b>Mentorship Programs:</b>Personalized connections between students and alumni, offering career advice, guidance, and support.</li>
+        <li><b>Networking Opportunities:</b> Events and discussions that help students and alumni expand their professional circles.</li>
+        <li><b>Career Development:</b> Tools and resources to help students navigate job opportunities, internships, and skill development.</li>
+      </ul>
+        <p>At SENECT, we believe that the strength of a community lies in its ability to connect, support, and inspire. Whether you're a student looking for guidance or an alumni eager to give back, SeNect is the place where these connections happen.</p><br>
+        <p><center>Join us today and be part of a network that’s shaping the future of higher education and career success.</center></p>
+      <!-- <img src="https://via.placeholder.com/600x300" alt="About Us" class="img-fluid mt-4"> -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section section-contact">
+    <div>
+      <h2><center>Contact Us</center></h2><br>
+      <p>We'd love to hear from you! Whether you have questions, feedback, or need support, the SSENECT team is here to help. Our goal is to make your experience as smooth and enjoyable as possible. If you're a student looking for guidance, an alumni wanting to connect, or anyone with suggestions on how we can improve SENECT, please reach out. We're always happy to assist.</p>
+      <br>
+      <h3>How to Reach Us:</h3>
+      <ul>
+        <li><strong>Email Us:</strong> If you have questions or need help, feel free to email us at: <a href="mailto:hellobuddy9827@gmail.com">support@senect.com</a></li>
+        <li><strong>Phone:</strong> For immediate assistance, you can call us at: <a href="tel:+919876543210">+91 1234567890</a></li>
+        <li><strong>Social Media:</strong> Connect with us on our social media platforms:
+          <ul>
+            <li><a href="https://www.facebook.com/SeNect" target="_blank">Facebook: @SeNect</a></li>
+            <li><a href="https://www.twitter.com/SeNectOfficial" target="_blank">Twitter: @SeNectOfficial</a></li>
+            <li><a href="https://www.linkedin.com/company/seNect" target="_blank">LinkedIn: SeNect Network</a></li>
+          </ul>
+        </li>
+      </ul>
+      <p>If you’re a student, alumni, or simply interested in learning more about SeNect, don’t hesitate to contact us. We’re here to ensure that your connection with our platform is seamless, informative, and impactful.</p>
+      <br>
+      <p>We look forward to hearing from you!</p>
+    </div>
+  </section>
+  
+
+  <!-- Footer -->
+  <footer class="text-center py-3">
+    <p>&copy; 2024 SENECT. All rights reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
